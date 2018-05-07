@@ -1,0 +1,20 @@
+/*Classes*/
+.corPadrao
+{
+	color: #BEF781;
+}
+.imgPoste
+{
+	margin-top: 15px;
+	float: right;
+	border-radius: 20px;
+}
+.imgRedeSocais
+{	
+	float: right;
+}
+.tituloTexto
+{
+	font-size: 20px;
+	font-weight: bold;
+}

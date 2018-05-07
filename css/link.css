@@ -1,0 +1,21 @@
+/*Formatação de links*/
+a{
+	text-decoration: none;
+	padding: 5px;
+}
+a:link
+{
+	color: #A4A4A4;
+}
+a:visited
+{
+	color: #A4A4A4;
+}
+a:hover
+{
+	color: #BEF781;
+}
+a:active
+{
+	color: #BDBDBD;
+}

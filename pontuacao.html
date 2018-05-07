@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Estoura Balões - Pontuação</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/clear.css">
+		<link rel="stylesheet" type="text/css" href="css/class.css">
+		<link rel="stylesheet" type="text/css" href="css/id.css">
+		<link rel="stylesheet" type="text/css" href="css/link.css">
+		<script type="text/javascript">
+			
+			function telaIndex()
+			{
+				window.location.href = "index.html";
+			}
+			function pontuacaoFinal()
+			{
+				var url = window.location.search;
+				var valores = url.replace("?" , "");	
+				var pontuacao = valores.split(",");	
+				var situacaoFinal = pontuacao[2];
+				document.getElementById('baloesEs').innerHTML = pontuacao[0];
+				document.getElementById('cronometro').innerHTML = pontuacao[1];
+				if(situacaoFinal == 1)
+				{
+					document.getElementById('situacaoFinal').innerHTML = "Parabéns, você completou o desafio!";
+				}
+				else if(situacaoFinal == 0)
+				{
+					document.getElementById('situacaoFinal').innerHTML = "Falhou, tente novamente.";
+				}
+			}
+
+		</script>
+	</head>
+	<body onload="pontuacaoFinal()" >
+		
+		<header>
+			<div id="cabecalho">
+				<div id="areaCabecalho">
+					Estoura <span class="corPadrao">Balhões</span>
+					<span id="linkPInicial"><a href="index.html">Pagina Inicial</a></span>
+				</div>					
+			</div>
+		</header>
+
+		<nav id= "areaPrincipal">
+			<div id="areaTelaPontuacao">
+				<div id="situacaoFinal"></div>
+				<span class="tituloTexto" >Balões Estourados</span>
+				<div id="baloesEstourados" style="margin: 0;position:relative;padding-left:6px;width:55px;background: url('imagens/balao_azul_grande_estourado.png');background-size:65px;margin-right: 200px;">
+					<span id="baloesEs"></span>
+				</div>
+
+				<div id="cronometro" style="margin: 0;padding-left:4px;width:75px;position:relative;background:url('imagens/cronometro.png');background-size: 80px";>
+					<span id="cronometro" ></span>
+				</div>			
+				<span class="tituloTexto">Segundos</span>
+				<div id="telaRecomecar" class="corPadrao">
+					<span class="tituloTexto">Jogar Novamente</span><br>
+					<img src="imagens/iniciar.png" onclick="telaIndex()">	
+				</div>				
+
+			</div>					
+		</nav>
+
+		<footer>
+			<div id="rodaPe">
+				<div id="areaRodaPe">
+					Copyright &copy; 2018 | Daniel Jorge, estudante de Sistemas de informação na Pontifícia Universidade Católica de Minas Gerais.					
+				</div>
+				<div id="redesSociais">
+					<a href="https://www.linkedin.com/in/daniel-jorge-942b1b149/" target="_blank">
+						<img title="Linkedin" class="imgRedeSocais" src="imagens/linkedin.png" width="50px">	
+					</a>
+					<a href="https://github.com/danieljpgo" target="_blank">
+						<img title="GitHub" class="imgRedeSocais" src="imagens/github.png" width="47px">
+					</a>
+				</div>						
+			</div>
+		</footer>
+
+	</body>	
+</html>

@@ -1,0 +1,129 @@
+/*Id's de todo projeto*/
+#cabecalho
+{
+	top: 0;
+	background: #FFF;
+	height: 40px;
+	width: 80%;
+	left: 10%;
+	right: 10%;
+	border: 1px solid #BDBDBD;
+	border-radius: 0px 0px 40px 40px;
+	position: fixed;
+}
+#areaCabecalho
+{
+	margin: 0 auto;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	width: 720px;
+}
+#areaPrincipal
+{
+	padding: 15px;
+	background: #FFF;	
+	margin: 50px auto 10px auto;
+	width: 60%;
+	height: 525px;
+	border-radius: 10px 50px 10px 50px;
+	border: 1px solid #BDBDBD;
+}
+#areaIniciar
+{
+	width: 120px;
+	height: 200px;
+	float: right;
+	margin-right: 45%;
+	text-align: center;
+	padding: 10px;
+}
+#rodaPe
+{
+	padding: 10px 20px 0px 20px;
+	bottom: 0;
+	background: #FFF;
+	height: 58px;	
+	border: 1px solid #BDBDBD;
+	border-radius: 45px 45px 0px 0px;
+}
+#areaRodaPe
+{
+	margin-left: 300px;	
+	text-align: center;
+	width: 720px;
+	display: inline-block;
+}
+#redesSociais
+{
+	display: inline-block;
+	float: right;
+	margin-right: 100px;
+}
+#telaPontos
+{		
+	margin: 20px auto;
+	text-align: center;		
+}
+#cenario
+{	
+	border-radius: 10px 50px 10px 50px;
+	height: 480px;
+	width: 600px;
+	margin-left: 100px;
+}
+#cronometro
+{
+	position: fixed;
+	margin-left: 300px;
+	margin-top: 80px;
+	color:red;
+	font-size: 20px;
+	height: 50px;
+	width: 75px;
+	padding-top: 24px;
+	display: inline-block;	
+	border-radius: 0px 10px 0px 10px;
+}
+#baloesInteiros
+{
+	color:#BEF781;
+	position: fixed;
+	margin-left: 310px;
+	margin-top: 160px;
+	font-size: 20px;
+	padding-top: 24px;
+	height: 50px;
+	width: 60px;
+	display: inline-block;	
+	border-radius: 0px 10px 0px 10px;
+}
+#baloesEstourados
+{	
+	color:#BEF781;
+	position: fixed;
+	margin-left: 310px;
+	margin-top: 240px;
+	font-size: 20px;
+	padding-top: 24px;
+	height: 50px;
+	width: 65px;
+	display: inline-block;	
+	border-radius: 0px 10px 0px 10px;
+}
+#situacaoFinal
+{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#areaTelaPontuacao
+{
+	margin-top: 30px;
+	text-align: center;
+}
+#linkPInicial
+{
+	margin-left: 350px;
+	font-size: 13px;
+}

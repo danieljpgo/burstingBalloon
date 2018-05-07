@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Estoura Balões - Página Inicial</title>		
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/clear.css">
+		<link rel="stylesheet" type="text/css" href="css/class.css">
+		<link rel="stylesheet" type="text/css" href="css/id.css">
+		<link rel="stylesheet" type="text/css" href="css/link.css">
+		<script language='Javascript'>			
+			function iniciaJogo()
+			{
+				var nivel_jogo = document.getElementById('dificuldade').value;
+				window.location.href = "jogo.html?" + nivel_jogo;				
+			}
+		</script>
+	</head>
+	<body>
+
+		<header>
+			<div id="cabecalho">
+				<div id="areaCabecalho">
+					Estoura <span class="corPadrao">Balhões</span>
+					<span id="linkPInicial"><a href="index.html">Pagina Inicial</a></span>
+				</div>					
+			</div>
+		</header>
+
+		<nav id= areaPrincipal>
+			<div>
+				<article>
+					<span class="tituloTexto">Como Jogar</span>
+					<img class="imgPoste" src="imagens/exemplo.png" width="50%">
+					<p>
+						Selecione a dificuldade do jogo, o que determina o tempo:<br><br>
+						Fácil   = 45 segundos <br>
+						Normal  = 30 segundos <br>
+						Difícil = 15 segundos <br><br> 
+						Click em todos os balões antes do tempo terminar para completar o jogo. <br>
+						
+					</p>
+				</article>
+			</div>
+			<div id="areaIniciar">
+				<br><br><br>
+				<label class="tituloTexto" for="dificuldade">Dificuldade</label>		
+				<select id="dificuldade">
+					<option value="1">Fácil</option>
+					<option value="2">Normal</option>
+					<option value="3">Difícil</option>
+				</select>
+				<img src="imagens/iniciar.png" onclick="iniciaJogo()" />
+			</div>
+		</nav>
+
+		<footer>
+			<div id="rodaPe">
+				<div id="areaRodaPe">
+					Copyright &copy; 2018 | Daniel Jorge, estudante de Sistemas de informação na Pontifícia Universidade Católica de Minas Gerais.					
+				</div>
+				<div id="redesSociais">
+					<a href="https://www.linkedin.com/in/daniel-jorge-942b1b149/" target="_blank">
+						<img title="Linkedin" class="imgRedeSocais" src="imagens/linkedin.png" width="50px">	
+					</a>
+					<a href="https://github.com/danieljpgo" target="_blank">
+						<img title="GitHub" class="imgRedeSocais" src="imagens/github.png" width="47px">
+					</a>
+				</div>						
+			</div>
+		</footer>
+
+	</body>	
+</html>
