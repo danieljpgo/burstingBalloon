@@ -6,5 +6,5 @@ HTML<br>
 CSS<br><br>
 
 Página do projeto rodando:<br>
-https://danieljpgo.github.io/jogoEstourandoBaloes/
+https://danieljpgo.github.io/burstingBalloon/
 
